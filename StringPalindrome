@@ -1,0 +1,46 @@
+package day_170625;
+
+import java.util.Scanner;
+
+public class StringPalindrome {
+
+	public static void main(String[] args) {
+		
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter your String value: ");
+		String s=sc.nextLine();
+		String rev="";
+		
+		for(int i=s.length()-1;i>=0;i--)
+		{
+			rev=rev+s.charAt(i);
+		}
+		System.out.println("Original String: "+s);
+		System.out.println("Reversed String: "+rev);
+		
+		if(s.equals(rev))
+		{
+			System.out.println("Entered string is a Palindrome");
+		}
+		else {
+			System.out.println("Entered string is not a Palindrome");
+		}
+
+	}
+
+}
+
+Output:
+case1:
+Enter your String value: 
+madam
+Original String: madam
+Reversed String: madam
+Entered string is a Palindrome
+
+case2:
+Enter your String value: 
+Hello world
+Original String: Hello world
+Reversed String: dlrow olleH
+Entered string is not a Palindrome
