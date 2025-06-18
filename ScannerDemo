@@ -1,0 +1,59 @@
+package home_Assignments;
+
+import java.util.Scanner;
+
+public class ScannerDemo {
+
+	public static void main(String[] args) {
+		
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter String value: ");
+		String str = sc.nextLine();
+		System.out.println(str);
+		
+		System.out.println("Enter Integer value: ");
+		int a = sc.nextInt();
+		System.out.println(a);
+		
+		System.out.println("Enter Float value: ");
+		float f = sc.nextFloat();
+		System.out.println(f);
+		
+		System.out.println("Enter Double value: ");
+		double d = sc.nextDouble();
+		
+		System.out.println(d);
+		
+		System.out.println("Enter Boolean value: ");
+		boolean bl = sc.nextBoolean();
+		System.out.println(bl);
+		
+		System.out.println("Addition: "+(a+f));
+		System.out.println("Subtraction: "+(d-f));
+		System.out.println("Multiplication: "+(a*d));
+		System.out.println("Division: "+(d/a));
+
+	}
+
+}
+
+Output:
+Enter String value: 
+Automation
+Automation
+Enter Integer value: 
+100
+100
+Enter Float value: 
+11.11
+11.11
+Enter Double value: 
+123456.677890
+123456.67789
+Enter Boolean value: 
+true
+true
+Addition: 111.11
+Subtraction: 123445.56789034333
+Multiplication: 1.2345667789E7
+Division: 1234.5667789000001
